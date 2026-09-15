@@ -1,0 +1,13 @@
+{
+  "progression": {
+    "elite": 2,
+    "level": 90,
+    "potential": 0,
+    "skill_level": 10,
+    "skill_index": 0
+  },
+  "skill_overrides": {
+    "char_500_noirc": 1,
+    "char_208_melan": 1
+  }
+}

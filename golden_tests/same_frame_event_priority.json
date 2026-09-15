@@ -1,0 +1,29 @@
+{
+  "status": "ASSUMED",
+  "evidence": "Simulator policy fixture, not an official-game recording",
+  "mechanic": "research/mechanics/same_frame_priority.md",
+  "queued_order": [
+    "MODIFIER_BOUNDARY",
+    "SKILL_END",
+    "SPAWN",
+    "HIT",
+    "AREA_HIT",
+    "SELF_DAMAGE",
+    "BURN_TICK",
+    "DEVICE_PULSE",
+    "TALENT_EVENT"
+  ],
+  "phase_order": [
+    "CONTINUOUS_UPDATES",
+    "QUEUED_EVENTS",
+    "BLOCKING_UPDATE",
+    "OPERATOR_ATTACK",
+    "ENEMY_ATTACK",
+    "ZERO_WINDUP_EVENTS",
+    "TERMINAL_CHECK",
+    "EXTERNAL_ACTION"
+  ],
+  "hit_tie": "attacker id, target id, attacker generation, target generation, complete payload",
+  "spawn_tie": "wave, fragment, route index, enemy id, complete payload",
+  "identical_payload_tie": "sequence; semantically identical events only"
+}

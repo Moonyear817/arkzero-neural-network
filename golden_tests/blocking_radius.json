@@ -1,0 +1,8 @@
+{
+  "status": "ASSUMED",
+  "evidence": "Simulator policy fixture, not an official-game recording",
+  "mechanic": "research/mechanics/blocking_radius.md",
+  "operator_position": [2, 0],
+  "radius": 0.5,
+  "samples": [[1.49, false], [1.5, true], [2.5, true], [2.51, false]]
+}

@@ -1,0 +1,13 @@
+{
+  "device": "Auto",
+  "config": "/Users/yihao/Desktop/arkzero/神经网络/configs/desktop_default.yaml",
+  "data_dir": "/Users/yihao/Desktop/arkzero/神经网络/data/real",
+  "checkpoint_dir": "/Users/yihao/Desktop/arkzero/神经网络/checkpoints",
+  "log_dir": "/Users/yihao/Desktop/arkzero/神经网络/logs",
+  "theme": "System",
+  "language": "zh_CN",
+  "auto_save_checkpoint": true,
+  "refresh_ms": 1000,
+  "max_log_lines": 10000,
+  "visualization_fps": 20
+}

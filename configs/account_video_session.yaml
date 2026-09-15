@@ -1,0 +1,21 @@
+# 用户已确认的账号近卫练度；正式训练仍须通过机制准入检查。
+training_scope: account_guards_chapter8
+account_snapshot: data/accounts/snapshots/82d3e5dbea0c91b94275c195f5aac466f19115a81e86af65d1b0204ad5e49408.json
+stage: R8-1
+stage_pool:
+- R8-1
+squad: []
+auto_squad: false
+squad_size: 12
+mcts_simulations: 16
+num_threads: 1
+device: auto
+iterations: 1
+episodes_per_iteration: 1
+evaluation_episodes: 20
+future_events_enabled: false
+curriculum: true
+checkpoint_dir: checkpoints/guards_chapter8
+output_dir: outputs/guards_chapter8
+seed: 12345
+account_trust_override: 200

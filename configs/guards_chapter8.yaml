@@ -1,0 +1,18 @@
+# Formal training is gated; no guessed account or silent fallback is permitted.
+training_scope: account_guards_chapter8
+account_snapshot: null
+stage: R8-1
+stage_pool: [R8-1]
+squad: []
+auto_squad: false
+squad_size: 12
+mcts_simulations: 16
+num_threads: 1
+device: auto
+iterations: 1
+episodes_per_iteration: 1
+evaluation_episodes: 20
+future_events_enabled: false
+curriculum: true
+checkpoint_dir: checkpoints/guards_chapter8
+output_dir: outputs/guards_chapter8

@@ -1,0 +1,42 @@
+# Prepared configuration only. Training remains paused pending verification.
+stage: main_00-01
+stage_pool: [main_00-01, main_00-08, main_00-09]
+curriculum: true
+curriculum_success_rate: 0.8
+curriculum_evaluations: 3
+auto_squad: true
+squad: []
+squad_size: 6
+joint_training_mode: alternating
+device: cpu
+num_threads: 2
+seed: 12345
+iterations: 40
+episodes_per_iteration: 6
+mcts_simulations: 32
+max_depth: 128
+max_decisions: 1024
+horizon: 300
+c_puct: 1.5
+dirichlet_alpha: 0.3
+dirichlet_epsilon: 0.25
+prior_uniform_mix: 0.3
+temperature: 1.0
+temperature_schedule: [{iteration: 0, value: 1.0}, {iteration: 21, value: 0.75}]
+uniform_mix_schedule: [{iteration: 0, value: 0.3}, {iteration: 21, value: 0.15}]
+skip_forced_actions: true
+batch_size: 16
+replay_buffer_size: 8192
+training_steps_per_iteration: 16
+learning_rate: 0.0003
+weight_decay: 0.0001
+value_loss_weight: 1.0
+gradient_clip: 5.0
+evaluation_episodes: 9
+evaluation_seed: 80000
+checkpoint_interval: 5
+promote_on_equal: false
+checkpoint_dir: outputs/reward_learning/checkpoints
+output_dir: outputs/reward_learning
+warm_start: null
+resume_from: null

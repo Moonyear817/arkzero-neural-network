@@ -1,0 +1,11 @@
+{
+  "status": "ASSUMED",
+  "evidence": "Simulator policy fixture, not an official-game recording",
+  "mechanic": "research/mechanics/attack_windup.md",
+  "configured_windup": 0.2,
+  "attack_interval": 1,
+  "before_time": 0.1,
+  "after_time": 0.3,
+  "initial_enemy_hp": 100,
+  "enemy_hp_after_hit": 70
+}

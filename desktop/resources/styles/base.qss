@@ -1,0 +1,13 @@
+QMainWindow { background: palette(window); }
+QLabel#appTitle { font-size: 19px; font-weight: 600; }
+QLabel#pageTitle { font-size: 22px; font-weight: 500; margin-bottom: 8px; }
+QLabel#metricLabel { font-size: 11px; color: palette(text); }
+QLabel#metricValue { font-size: 20px; font-weight: 600; }
+QFrame#metricCard { border: none; }
+QListWidget#sidebar, QListWidget#utilitySidebar { border: none; font-size: 14px; padding: 5px; }
+QListWidget#sidebar::item, QListWidget#utilitySidebar::item { padding: 12px 9px; border-radius: 5px; }
+QListWidget#sidebar::item:selected, QListWidget#utilitySidebar::item:selected { background: palette(highlight); color: palette(highlighted-text); }
+QPushButton { min-height: 24px; padding: 2px 8px; }
+QToolButton { padding: 6px 5px; }
+QPushButton[primary="true"] { background: palette(highlight); color: palette(highlighted-text); border: none; border-radius: 5px; padding: 6px 18px; }
+QGroupBox { margin-top: 12px; }

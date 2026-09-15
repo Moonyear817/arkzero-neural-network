@@ -1,0 +1,52 @@
+stage: 0-1
+squad:
+- char_002_amiya
+- char_103_angel
+- char_212_ansel
+- char_500_noirc
+device: cpu
+num_threads: 1
+seed: 12345
+iterations: 1
+episodes_per_iteration: 1
+mcts_simulations: 2
+max_depth: 8
+max_decisions: 12
+horizon: 30
+c_puct: 1.5
+dirichlet_alpha: 0.3
+dirichlet_epsilon: 0.25
+prior_uniform_mix: 0.5
+temperature: 1.0
+temperature_schedule:
+- iteration: 0
+  value: 1.0
+- iteration: 6
+  value: 0.75
+- iteration: 11
+  value: 0.5
+uniform_mix_schedule:
+- iteration: 0
+  value: 0.5
+- iteration: 3
+  value: 0.3
+- iteration: 6
+  value: 0.15
+- iteration: 11
+  value: 0.05
+skip_forced_actions: true
+batch_size: 2
+replay_buffer_size: 50000
+training_steps_per_iteration: 1
+learning_rate: 0.001
+weight_decay: 0.0001
+value_loss_weight: 1.0
+gradient_clip: 5.0
+evaluation_episodes: 1
+evaluation_seed: 80000
+checkpoint_interval: 1
+promote_on_equal: true
+checkpoint_dir: /Users/yihao/Desktop/arkzero/神经网络/outputs/prts_smoke/checkpoints
+output_dir: /Users/yihao/Desktop/arkzero/神经网络/outputs/prts_smoke
+data_dir: null
+resume_from: null

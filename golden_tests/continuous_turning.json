@@ -1,0 +1,10 @@
+{
+  "status": "ASSUMED",
+  "evidence": "Simulator policy fixture, not an official-game recording",
+  "mechanic": "research/mechanics/continuous_turning.md",
+  "start": [0, 0],
+  "end": [2, 2],
+  "waypoints": [[1, 0], [1, 1], [2, 1]],
+  "speed": 1,
+  "samples": [[0.5, [0.5, 0]], [1.5, [1, 0.5]], [2.5, [1.5, 1]], [3.5, [2, 1.5]]]
+}

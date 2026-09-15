@@ -1,0 +1,7 @@
+{
+  "settings_paths_valid": true,
+  "checkpoint_resume_loaded": true,
+  "saved_replay_samples": 159,
+  "data_dir": "/Users/yihao/Desktop/arkzero/神经网络/data/real",
+  "checkpoint_dir": "/Users/yihao/Desktop/arkzero/神经网络/checkpoints/desktop/20260915-081230-100970"
+}

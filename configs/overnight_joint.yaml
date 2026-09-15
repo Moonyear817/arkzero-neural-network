@@ -1,0 +1,53 @@
+stage: main_00-01
+squad: []
+device: cpu
+num_threads: 2
+seed: 12345
+iterations: 100000
+episodes_per_iteration: 3
+mcts_simulations: 8
+max_depth: 32
+max_decisions: 512
+horizon: 300
+c_puct: 1.5
+dirichlet_alpha: 0.3
+dirichlet_epsilon: 0.25
+prior_uniform_mix: 0.5
+temperature: 1.0
+temperature_schedule:
+- iteration: 0
+  value: 1.0
+- iteration: 30
+  value: 0.8
+- iteration: 100
+  value: 0.6
+uniform_mix_schedule:
+- iteration: 0
+  value: 0.2
+- iteration: 30
+  value: 0.1
+- iteration: 100
+  value: 0.05
+skip_forced_actions: true
+batch_size: 8
+replay_buffer_size: 512
+training_steps_per_iteration: 8
+learning_rate: 0.0003
+weight_decay: 0.0001
+value_loss_weight: 1.0
+gradient_clip: 5.0
+evaluation_episodes: 3
+evaluation_seed: 80000
+checkpoint_interval: 25
+promote_on_equal: false
+checkpoint_dir: /Users/yihao/Desktop/arkzero/神经网络/outputs/overnight_joint/checkpoints
+output_dir: /Users/yihao/Desktop/arkzero/神经网络/outputs/overnight_joint
+data_dir: /Users/yihao/Desktop/arkzero/神经网络/data/real
+resume_from: null
+stage_pool:
+- main_00-01
+- main_00-08
+- main_00-09
+auto_squad: true
+squad_size: 6
+warm_start: /Users/yihao/Desktop/arkzero/神经网络/checkpoints/best.pt

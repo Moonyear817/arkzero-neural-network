@@ -1,0 +1,23 @@
+# Conservative local desktop session. UI edits go to gui_session.yaml.
+stage: '0-1'
+squad: [char_500_noirc, char_208_melan]
+device: auto
+num_threads: 1
+iterations: 1
+episodes_per_iteration: 2
+mcts_simulations: 16
+batch_size: 32
+replay_buffer_size: 50000
+training_steps_per_iteration: 2
+evaluation_episodes: 1
+learning_rate: 0.001
+c_puct: 1.5
+dirichlet_alpha: 0.3
+dirichlet_epsilon: 0.25
+temperature: 1.0
+seed: 12345
+checkpoint_interval: 1
+checkpoint_dir: outputs/desktop_training/checkpoints
+output_dir: outputs/desktop_training
+max_decisions: 512
+horizon: 300
